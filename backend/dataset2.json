@@ -1,0 +1,85 @@
+[
+  {
+    "nom": "Sondage Préférences Alimentaires",
+    "questions": [
+      {
+        "intitule": "Quel est votre plat préféré ?",
+        "type": "ouverte"
+      },
+      {
+        "intitule": "Quels types de cuisine préférez-vous ?",
+        "type": "qcm",
+        "reponses": ["Italienne", "Chinoise", "Mexicaine", "Indienne"]
+      },
+      {
+        "intitule": "Combien de fois par semaine mangez-vous au restaurant ?",
+        "type": "ouverte"
+      },
+      {
+        "intitule": "Préférez-vous les plats sucrés ou salés ?",
+        "type": "qcm",
+        "reponses": ["Sucrés", "Salés", "Les deux"]
+      },
+      {
+        "intitule": "Quel est votre fruit préféré ?",
+        "type": "ouverte"
+      }
+    ]
+  },
+  {
+    "nom": "Sondage Habitudes de Transport",
+    "questions": [
+      {
+        "intitule": "Quel moyen de transport utilisez-vous le plus souvent ?",
+        "type": "qcm",
+        "reponses": ["Voiture", "Transports en commun", "Vélo", "Marche"]
+      },
+      {
+        "intitule": "Combien de temps passez-vous en moyenne pour vous rendre au travail ?",
+        "type": "ouverte"
+      },
+      {
+        "intitule": "Avez-vous déjà utilisé un service de covoiturage ?",
+        "type": "qcm",
+        "reponses": ["Oui", "Non"]
+      },
+      {
+        "intitule": "Quel est votre avis sur la qualité des transports en commun dans votre ville ?",
+        "type": "ouverte"
+      },
+      {
+        "intitule": "Préférez-vous les voyages en train ou en avion ?",
+        "type": "qcm",
+        "reponses": ["Train", "Avion", "Indifférent"]
+      }
+    ]
+  },
+  {
+    "nom": "Sondage sur l'Usage du Numérique",
+    "questions": [
+      {
+        "intitule": "Combien d'heures par jour passez-vous sur internet ?",
+        "type": "ouverte"
+      },
+      {
+        "intitule": "Quel est votre réseau social préféré ?",
+        "type": "qcm",
+        "reponses": ["Facebook", "Twitter", "Instagram", "LinkedIn", "Autre"]
+      },
+      {
+        "intitule": "Quel type de contenu préférez-vous consommer en ligne ?",
+        "type": "qcm",
+        "reponses": ["Vidéos", "Articles", "Podcasts", "Livres numériques"]
+      },
+      {
+        "intitule": "Avez-vous déjà effectué des achats en ligne ?",
+        "type": "qcm",
+        "reponses": ["Oui", "Non"]
+      },
+      {
+        "intitule": "Quel est votre outil de communication en ligne préféré pour le travail ?",
+        "type": "ouverte"
+      }
+    ]
+  }
+]

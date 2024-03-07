@@ -1,0 +1,82 @@
+{
+  "reponses": [
+    {
+      "sondage_id": "65d8aab49334512a420aaca0",
+      "utilisateur_id": "65d8ade89334512a420aacab",
+      "reponses": [
+        {
+          "question_id": "65d8aab49334512a420aaca1",
+          "reponse": "Vélo"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca2",
+          "reponse": "30 minutes"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca3",
+          "reponse": "Oui"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca4",
+          "reponse": "Satisfaisante"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca5",
+          "reponse": "Train"
+        }
+      ]
+    },
+    {
+      "sondage_id": "65d8aab49334512a420aaca0",
+      "utilisateur_id": "65d8adfc9334512a420aacac",
+      "reponses": [
+        {
+          "question_id": "65d8aab49334512a420aaca1",
+          "reponse": "Transports en commun"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca2",
+          "reponse": "45 minutes"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca3",
+          "reponse": "Non"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca4",
+          "reponse": "Peut mieux faire"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca5",
+          "reponse": "Avion"
+        }
+      ]
+    },
+    {
+      "sondage_id": "65d8aab49334512a420aaca0",
+      "utilisateur_id": "65d8ae0f9334512a420aacad",
+      "reponses": [
+        {
+          "question_id": "65d8aab49334512a420aaca1",
+          "reponse": "Marche"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca2",
+          "reponse": "15 minutes"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca3",
+          "reponse": "Oui"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca4",
+          "reponse": "Excellente"
+        },
+        {
+          "question_id": "65d8aab49334512a420aaca5",
+          "reponse": "Indifférent"
+        }
+      ]
+    }
+  ]
+}

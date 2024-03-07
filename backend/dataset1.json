@@ -1,0 +1,43 @@
+[
+  {
+    "nom": "Sondage Préférences Alimentaires",
+    "questions": [
+      {
+        "intitule": "Quel est votre plat préféré ?",
+        "type": "ouverte"
+      },
+      {
+        "intitule": "Quels types de cuisine préférez-vous ?",
+        "type": "qcm",
+        "reponses": ["Italienne", "Chinoise", "Mexicaine", "Indienne"]
+      }
+    ]
+  },
+  {
+    "nom": "Sondage sur les Habitudes de Transport",
+    "questions": [
+      {
+        "intitule": "Quel est votre moyen de transport préféré ?",
+        "type": "ouverte"
+      },
+      {
+        "intitule": "Combien de fois par semaine utilisez-vous les transports en commun ?",
+        "type": "numerique"
+      }
+    ]
+  },
+  {
+    "nom": "Sondage sur l'Utilisation des Technologies",
+    "questions": [
+      {
+        "intitule": "Quel est votre système d'exploitation préféré pour les ordinateurs ?",
+        "type": "qcm",
+        "reponses": ["Windows", "macOS", "Linux", "Autre"]
+      },
+      {
+        "intitule": "Combien d'heures par jour passez-vous sur votre smartphone ?",
+        "type": "numerique"
+      }
+    ]
+  }
+]

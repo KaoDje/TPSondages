@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "9c332f17-8dac-4f40-9073-60b84dbb6916",
+		"name": "TP Sondages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30681082"
+	},
+	"item": [
+		{
+			"name": "Sondages",
+			"item": [
+				{
+					"name": "create Sondage 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sondage\": {\r\n        \"nom\": \"Sondage Préférences Alimentaires\",\r\n        \"questions\": [\r\n        {\r\n            \"intitule\": \"Quel est votre plat préféré ?\",\r\n            \"type\": \"ouverte\"\r\n        },\r\n        {\r\n            \"intitule\": \"Quels types de cuisine préférez-vous ?\",\r\n            \"type\": \"qcm\",\r\n            \"reponses\": [\"Italienne\", \"Chinoise\", \"Mexicaine\", \"Indienne\"]\r\n        }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sondages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Sondage 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sondage\": {\r\n        \"nom\": \"Sondage Habitudes de Transport\",\r\n        \"questions\": [\r\n            {\r\n                \"intitule\": \"Quel moyen de transport utilisez-vous le plus souvent ?\",\r\n                \"type\": \"qcm\",\r\n                \"reponses\": [\"Voiture\", \"Transports en commun\", \"Vélo\", \"Marche\"]\r\n            },\r\n            {\r\n                \"intitule\": \"Combien de temps passez-vous en moyenne pour vous rendre au travail ?\",\r\n                \"type\": \"ouverte\"\r\n            },\r\n            {\r\n                \"intitule\": \"Avez-vous déjà utilisé un service de covoiturage ?\",\r\n                \"type\": \"qcm\",\r\n                \"reponses\": [\"Oui\", \"Non\"]\r\n            },\r\n            {\r\n                \"intitule\": \"Quel est votre avis sur la qualité des transports en commun dans votre ville ?\",\r\n                \"type\": \"ouverte\"\r\n            },\r\n            {\r\n                \"intitule\": \"Préférez-vous les voyages en train ou en avion ?\",\r\n                \"type\": \"qcm\",\r\n                \"reponses\": [\"Train\", \"Avion\", \"Indifférent\"]\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sondages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All sondages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sondages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sondage by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sondages/65d8accb9334512a420aaca6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages",
+								"65d8accb9334512a420aaca6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update sondage name by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sondage UPDATED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sondages/65d88e9adf3fd376dcd3ad47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages",
+								"65d88e9adf3fd376dcd3ad47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update question by ids",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": {\r\n                    \"intitule\": \"UPDATED\",\r\n                    \"type\": \"qcm\",\r\n                    \"reponses\": [\r\n                        \"Oui\",\r\n                        \"Non\"\r\n                    ]\r\n                }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sondages/65d89d530e8fc7af4c79b22a/65d89d530e8fc7af4c79b22c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages",
+								"65d89d530e8fc7af4c79b22a",
+								"65d89d530e8fc7af4c79b22c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sondage by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "User-Id",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/sondages/65d89d530e8fc7af4c79b22a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages",
+								"65d89d530e8fc7af4c79b22a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Question by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sondages/65d89d530e8fc7af4c79b22a/65d89d530e8fc7af4c79b22c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sondages",
+								"65d89d530e8fc7af4c79b22a",
+								"65d89d530e8fc7af4c79b22c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reponses",
+			"item": [
+				{
+					"name": "Add reponses sondage 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"sondage_id\": \"65d8aab49334512a420aaca0\",\r\n      \"utilisateur_id\": \"65d8ade89334512a420aacab\",\r\n      \"reponses\": [\r\n        {\r\n          \"question_id\": \"65d8aab49334512a420aaca1\",\r\n          \"reponse\": \"Vélo\"\r\n        },\r\n        {\r\n          \"question_id\": \"65d8aab49334512a420aaca2\",\r\n          \"reponse\": \"30 minutes\"\r\n        },\r\n        {\r\n          \"question_id\": \"65d8aab49334512a420aaca3\",\r\n          \"reponse\": \"Oui\"\r\n        },\r\n        {\r\n          \"question_id\": \"65d8aab49334512a420aaca4\",\r\n          \"reponse\": \"Satisfaisante\"\r\n        },\r\n        {\r\n          \"question_id\": \"65d8aab49334512a420aaca5\",\r\n          \"reponse\": \"Train\"\r\n        }\r\n      ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/reponses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reponses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add reponses sondage 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"sondage_id\": \"65d8accb9334512a420aaca6\",\r\n      \"utilisateur_id\": \"65d8a625c0f2757f6fb9a689\",\r\n      \"reponses\": [\r\n        {\r\n          \"question_id\": \"65d8accb9334512a420aaca7\",\r\n          \"reponse\": \"Lasagnes\"\r\n        },\r\n        {\r\n          \"question_id\": \"65d8accb9334512a420aaca8\",\r\n          \"reponse\": [\"Italienne\", \"Mexicaine\"]\r\n        }\r\n      ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/reponses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reponses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All reponses by sondageId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/reponses/65d8accb9334512a420aaca6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reponses",
+								"65d8accb9334512a420aaca6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Generate userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

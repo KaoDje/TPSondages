@@ -1,0 +1,46 @@
+{
+  "reponses": [
+    {
+      "sondage_id": "65d8accb9334512a420aaca6",
+      "utilisateur_id": "65d8a625c0f2757f6fb9a689",
+      "reponses": [
+        {
+          "question_id": "65d8accb9334512a420aaca7",
+          "reponse": "Lasagnes"
+        },
+        {
+          "question_id": "65d8accb9334512a420aaca8",
+          "reponse": ["Italienne", "Mexicaine"]
+        }
+      ]
+    },
+    {
+      "sondage_id": "65d8accb9334512a420aaca6",
+      "utilisateur_id": "65d8adcf9334512a420aaca9",
+      "reponses": [
+        {
+          "question_id": "65d8accb9334512a420aaca7",
+          "reponse": "Sushi"
+        },
+        {
+          "question_id": "65d8accb9334512a420aaca8",
+          "reponse": ["Chinoise", "Japonaise"]
+        }
+      ]
+    },
+    {
+      "sondage_id": "65d8accb9334512a420aaca6",
+      "utilisateur_id": "65d8addd9334512a420aacaa",
+      "reponses": [
+        {
+          "question_id": "65d8accb9334512a420aaca7",
+          "reponse": "Curry d'agneau"
+        },
+        {
+          "question_id": "65d8accb9334512a420aaca8",
+          "reponse": ["Indienne"]
+        }
+      ]
+    }
+  ]
+}
